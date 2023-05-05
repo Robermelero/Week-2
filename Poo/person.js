@@ -43,4 +43,4 @@ person1.hobbies= ["tennis", "football", "eat"];
 // console.log(person1.calAge(2023));
 // console.log(person1.printHobbies());
 
-module.exports.Person = Person;
+module.exports = {Person}
