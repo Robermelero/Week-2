@@ -5,20 +5,21 @@ export class Library
 {
     //////////////////// ATTRIBUTES ////////////////////////
 
-    private books : object[];
+    private books : Book[];
     private address: string;
     private manager: string;
 
     /////////////////// CONSTRUCTOR ///////////////////////
 
-    constructor(){
+    constructor(books:Book[] , address: string, manager:string){
 
-    this.books = [];
-    this.address ;
-    this.manager ;
+    this.books = books;
+    this.address = address;
+    this.manager = manager;
     }
 
     /////////////////// METODS //////////////////////
+   
 
     public setAddress(address: string): string{
         return this.address = address
@@ -36,21 +37,24 @@ export class Library
         return this.manager
     };
 
-    public toString () {
-        for (let i=0; i<this.books.length; i++)
-        
-        return `${this.books[i]}:${"\n"}` + Book.toString()
+    public toStringg() : string{
+        let view : string = ""
+        for(let i = 0; i < this.books.length; i++){
+            view = view +"\n"+ "Book " +[i+1]+":\n" + this.books[i].toString()+ "\n";
+        }return view;
     };
 
-    public getNumberOfBooks(){
-        let suma = 0
-        for (let i=0; i<Book.length; i++)
-        return  suma += Book[i]
+    public getNumberOfBooks() {
+       return this.books.length;
     };
 
-    // public findByAuthor(author: string): Book[]{
+    public findByAuthor(author: string){
+     let aut:Book[] =[]   
+     for( let i=0; this.books.length; i++)
+     if (this.books[i].getAuthor() == author){
+       return aut.push(this.books[i])
+     }
+    
         
-    //     return this.books.filter(byAut => this.books=== author)
-    // }
-
-};
+    }
+    }

@@ -65,7 +65,7 @@ public setTitle( title:string ):string{
   };
 
   public toString(): string {
-    return `Title - ${this.title}${"\n"}Number of Pages - ${this.nPages}${"\n"}ISBN - ${this.isbn}${"\n"}Author - ${this.author}${"\n"}Editorial - ${this.editorial}`;
+    return `${"\n"}Title - ${this.title}${"\n"}Number of Pages - ${this.nPages}${"\n"}ISBN - ${this.isbn}${"\n"}Author - ${this.author}${"\n"}Editorial - ${this.editorial}`;
   }
 
 };
