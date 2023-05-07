@@ -30,13 +30,13 @@ const isRainbow = (colors:string[]) => {
 
     ////////////////////////////////////////// RETO 5 ///////////////////////////////////
 
-    let arr1:string[] = ["red","Purple","violet","black"];
+    // let arr1:string[] = ["red","Purple","violet","black"];
 
-    const add = (myWords:string[]):number =>{
+    export const add = (myWords:string[]):number =>{
      
         let suma:number = 0
         for (let i=0; i<myWords.length; i++){
        suma += myWords[i].length
         };
-        return suma;
-    };console.log(add(arr1));
+        return suma;}
+    // };console.log(add(arr1));
