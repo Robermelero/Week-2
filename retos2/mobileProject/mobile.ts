@@ -63,5 +63,9 @@ export class Mobile
       return this.price
   };
 
+  public toPrint([]):string {
+    return `The characteristics of the mobile name are:${"\n"}${"\n"}• Name:          ${this.name}${"\n"}• Trademark:     ${this.trademark}${"\n"}• model:         ${this.model}${"\n"}• Color:         ${this.color}${"\n"}• Price:         ${this.price}`;
+  }
+
 
 }
