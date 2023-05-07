@@ -1,6 +1,6 @@
 import { Book } from "./book";
 
-let book1 = new Book("Sol de media noche", "Stephanie Meyer", "Alphaguara");
+let book1:Book = new Book("Sol de media noche", "Stephanie Meyer", "Alphaguara");
 console.log(book1);
 console.log(book1.getTitle());
 book1.setNpages(560);
