@@ -1,4 +1,7 @@
+"use strict";
 //////////////////////////////////// Reto 3 //////////////////////////////////////////////
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.add = void 0;
 var functionEvenNumber = function (number) {
     var n = [];
     for (var i = 0; i <= number; i++) {
@@ -26,7 +29,7 @@ var isRainbow = function (colors) {
 };
 console.log(isRainbow(["red", "Purple", "violet", "black"]));
 ////////////////////////////////////////// RETO 5 ///////////////////////////////////
-var arr1 = ["red", "Purple", "violet", "black"];
+// let arr1:string[] = ["red","Purple","violet","black"];
 var add = function (myWords) {
     var suma = 0;
     for (var i = 0; i < myWords.length; i++) {
@@ -35,4 +38,5 @@ var add = function (myWords) {
     ;
     return suma;
 };
-console.log(add(arr1));
+exports.add = add;
+// };console.log(add(arr1));

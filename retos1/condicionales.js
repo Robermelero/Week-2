@@ -1,4 +1,7 @@
+"use strict";
 ////////////////////////////////////////////////  RETO 2 //////////////////////////////////////////////////////
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.functionIsEven = void 0;
 var zodiac = function (day, month) {
     var zodiacs = "";
     if (((day >= 23 && month == "July") && (day <= 31 && month == "July")) || ((day <= 22 && month == "August") && (day > 0 && month == "August"))) {
@@ -75,4 +78,5 @@ var functionIsEven = function (number) {
     }
     ;
 };
-console.log(functionIsEven(25));
+exports.functionIsEven = functionIsEven;
+// console.log(functionIsEven(25));

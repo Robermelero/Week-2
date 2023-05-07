@@ -41,9 +41,9 @@ continent("Papua");
 /////////////////////////////////////////////// RETO 4  /////////////////////////////////////////////////////////////////////
 
 
-const functionIsEven =( number:number): string => {
+export const functionIsEven =( number:number): string => {
     let n:string = ""
     if (number % 2 == 0){return n= "El numero es par"}
     else {return n= "El numero es impar"};
 };
-console.log(functionIsEven(25));
+// console.log(functionIsEven(25));
