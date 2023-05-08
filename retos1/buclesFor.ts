@@ -1,6 +1,6 @@
 
 
-//////////////////////////////////// Reto 3 //////////////////////////////////////////////
+//////////////////////////////////// Reto 2 //////////////////////////////////////////////
 
 const functionEvenNumber = (number:number):number[] =>{
     let n:number[] = [];
@@ -9,6 +9,17 @@ const functionEvenNumber = (number:number):number[] =>{
 };return n
 };
 console.log(functionEvenNumber(15));
+
+/////////////////////////////////// RETO 3  //////////////////////////////////////////
+let arr32:number[] = [10,55,15,66]
+const myRevert = (myArr:number[]):number[]  =>{
+let m:number[] = [];
+for (let i=0; i<myArr.length-1; i--){
+m.push(i);
+}return m
+}; console.log(myRevert(arr32))
+
+
 
 /////////////////////////////////// RETO 4 //////////////////////////////////////////////
 
