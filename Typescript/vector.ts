@@ -3,7 +3,7 @@ export class Vector
 {
 ///////////////// ATTRIBUTE /////////////////
 
-private elements: number[];
+private elements: Vector[];
 
 
 ///////////////  CONTRUCTOR /////////////////
@@ -17,11 +17,11 @@ constructor (n:number, k:number){
 
 //////////////// METODS ////////////////
 
-public print():number[]{
-    return this.elements
+public print(){
+    console.log(this.elements)
 }
 
-public add(v1:number[]):number[]{
+public add(v1:number[]):Vector[]{
     let suma :number[]= [];
    
         for (let i = 0; i < v1.length; i++){
@@ -30,7 +30,7 @@ public add(v1:number[]):number[]{
     return suma;
 };
 
-public subs(v1:number[]):number[]{
+public subs(v1:number[]):Vector[]{
     let resta:number[] = [];
     for (let i=0; i<v1.length; i++){
         resta[i]= v1[i]- this.elements[i];

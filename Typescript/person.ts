@@ -27,11 +27,11 @@ public  yearOfBirth(currentYear: number):number{
     return currentYear - this.age
 }
 
-public setAddress(adress:string):string{
-  return  this.address = adress
+public setAddress(newAdress:string){
+  this.address = newAdress
 }
 
 public getAddress():string {
     return this.address
 }
-}
+};
