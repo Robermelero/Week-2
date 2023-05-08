@@ -28,7 +28,9 @@ public  yearOfBirth(currentYear: number):number{
 }
 
 public setAddress(newAdress:string){
-  this.address = newAdress
+
+    this.address = newAdress
+
 }
 
 public getAddress():string {
