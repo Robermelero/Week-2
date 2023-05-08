@@ -24,40 +24,40 @@ constructor (title:string, author :string, editorial: string){
 }
 ////////////////// METODS /////////////////////
 
-public setTitle( title:string ):string{
-    return  this.title = title
+public setTitle( newTitle:string ){
+    this.title = newTitle
   };
   
   public getTitle():string {
       return this.title
   };
 
-  public setNpages(nPages:number):number{
-    return  this.nPages = nPages
+  public setNpages(newNpages:number){
+    this.nPages = newNpages
   };
   
   public getNpages():number {
       return this.nPages
   };
 
-  public setIsbn(isbn:string):string{
-    return  this.isbn = isbn
+  public setIsbn(newIsbn:string){
+    this.isbn = newIsbn
   };
   
   public getIsbn():string {
       return this.isbn
   };
 
-  public setAuthor(author:string):string{
-    return  this.author = author
+  public setAuthor(newAuthor:string){
+    this.author = newAuthor
   };
   
   public getAuthor():string {
       return this.author
   };
 
-  public setEditorial(editorial:string):string{
-    return  this.editorial = editorial
+  public setEditorial(newEditorial:string){
+    this.editorial = newEditorial
   };
   
   public getEditorial():string {
