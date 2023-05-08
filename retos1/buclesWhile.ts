@@ -20,14 +20,13 @@ console.log(hasEven(nums));
 
 ///////////////////////////////////////////   RETO 3 //////////////////////////////////////////////
 
-// let names:string[] = ["Maria","Mirta","Miguel"]
+let names:string[] = ["Maria","Mirta","Miguel"]
 
-// const startWithM = (mynames: string[]) => {
-//     let i:number = 0;
-//     let encontrado : boolean = false
-//     while(i<mynames.length&&!encontrado){
-//      encontrado =((mynames[mynames[0][0].slice(0)] =="M"))
-//      i++
-//     }if (encontrado){return encontrado}
-//     else{return false}
-//     };console.log(startWithM(names));
+const startWithM = (mynames: string[]) => {
+    let i:number = 0;
+    while(i<mynames.length){
+     if(mynames[i].startsWith("M")==false) {return false}
+     i++
+    } return true
+};console.log(startWithM(names));
+
