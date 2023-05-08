@@ -10,12 +10,12 @@ const functionEvenNumber = (number:number):number[] =>{
 };
 console.log(functionEvenNumber(15));
 
-/////////////////////////////////// RETO 3  //////////////////////////////////////////
+///////////////////////////////// RETO 3  //////////////////////////////////////////
 let arr32:number[] = [10,55,15,66]
 const myRevert = (myArr:number[]):number[]  =>{
 let m:number[] = [];
-for (let i=0; i<myArr.length-1; i--){
-m.push(i);
+for (let i=myArr.length-1 ; i>=0; i--){
+m.push(myArr[i]);
 }return m
 }; console.log(myRevert(arr32))
 

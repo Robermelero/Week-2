@@ -13,12 +13,12 @@ var functionEvenNumber = function (number) {
     return n;
 };
 console.log(functionEvenNumber(15));
-/////////////////////////////////// RETO 3  //////////////////////////////////////////
+///////////////////////////////// RETO 3  //////////////////////////////////////////
 var arr32 = [10, 55, 15, 66];
 var myRevert = function (myArr) {
     var m = [];
-    for (var i = 0; i < myArr.length - 1; i--) {
-        m.push(i);
+    for (var i = myArr.length - 1; i >= 0; i--) {
+        m.push(myArr[i]);
     }
     return m;
 };

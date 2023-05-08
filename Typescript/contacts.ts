@@ -4,7 +4,7 @@ export class Contacts
 
 {////////////// ATTRIBUTES /////////////
 
-public people: object[]
+public people: Person[]
 
 //////////// CONSTRUCTOR ////////////
 
@@ -16,7 +16,7 @@ this.people = []
 
 public printCalendar() {
     
-        return this.people 
+      console.log (this.people)
     
 }
 

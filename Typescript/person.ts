@@ -19,8 +19,8 @@ this.address = adress;
 
 ///////////// METODS ////////////
 
-public printName():string {
-return this.name
+public printName() {
+console.log(this.name)
 }
 
 public  yearOfBirth(currentYear: number):number{
