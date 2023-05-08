@@ -1,5 +1,5 @@
 "use strict";
-//////////////////////////////////// Reto 3 //////////////////////////////////////////////
+//////////////////////////////////// Reto 2 //////////////////////////////////////////////
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.add = void 0;
 var functionEvenNumber = function (number) {
@@ -13,6 +13,16 @@ var functionEvenNumber = function (number) {
     return n;
 };
 console.log(functionEvenNumber(15));
+/////////////////////////////////// RETO 3  //////////////////////////////////////////
+var arr32 = [10, 55, 15, 66];
+var myRevert = function (myArr) {
+    var m = [];
+    for (var i = 0; i < myArr.length - 1; i--) {
+        m.push(i);
+    }
+    return m;
+};
+console.log(myRevert(arr32));
 /////////////////////////////////// RETO 4 //////////////////////////////////////////////
 var isRainbow = function (colors) {
     var color = [];
