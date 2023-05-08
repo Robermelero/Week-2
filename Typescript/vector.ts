@@ -3,7 +3,7 @@ export class Vector
 {
 ///////////////// ATTRIBUTE /////////////////
 
-private elements: number[];
+private elements: Vector[];
 
 
 ///////////////  CONTRUCTOR /////////////////
@@ -21,6 +21,7 @@ public print(){
     console.log(this.elements)
 }
 
+
 public add(v1:Vector):Vector{
     let suma :Vector = new Vector (this.elements.length,0);
    
@@ -30,10 +31,13 @@ public add(v1:Vector):Vector{
     return suma;
 };
 
+
+
 public subs(v1:Vector):Vector{
     let resta:Vector = new Vector (this.elements.length,0);
     for (let i = 0; i < this.elements.length; i++){
         resta.elements[i]= v1.elements[i]- this.elements[i];
+
     }
     return resta;
 };

@@ -23,40 +23,40 @@ export class Mobile
 
   /////////////////////   METODS  ///////////////////////////
 
-  public setName( name:string ):string{
-    return  this.name = name
+  public setName( newName:string ):string{
+    return  this.name = newName
   };
   
   public getName():string {
       return this.name
   };
 
-  public setTrademark(trademark:string):string{
-    return  this.trademark = trademark
+  public setTrademark(setTrademark:string):string{
+    return  this.trademark =setTrademark
   };
   
   public getTrademarkt():string {
       return this.trademark
   };
 
-  public setModel(model:string):string{
-    return  this.model = model
+  public setModel(newModel:string):string{
+    return  this.model = newModel
   };
   
   public getModel():string {
       return this.model
   };
 
-  public setColor(color:string):string{
-    return  this.color = color
+  public setColor(newColor:string):string{
+    return  this.color = newColor
   };
   
   public getColor():string {
       return this.color
   };
 
-  public setPrice(price:number):number{
-    return  this.price = price
+  public setPrice(newPrice:number):number{
+    return  this.price = newPrice
   };
   
   public getPrice():number {

@@ -21,16 +21,16 @@ export class Library
     /////////////////// METODS //////////////////////
    
 
-    public setAddress(address: string): string{
-        return this.address = address
+    public setAddress(address: string){
+     this.address = address
     };
 
     public getAddress(): string{
         return this.address
     };
 
-    public setManager(manager: string): string{
-        return this.manager = manager
+    public setManager(manager: string){
+     this.manager = manager
     };
 
     public getManager(): string{
@@ -50,11 +50,10 @@ export class Library
 
     public findByAuthor(author: string){
      let aut:Book[] =[]   
-     for( let i=0; this.books.length; i++)
+     for( let i=0; this.books.length; i++){
      if (this.books[i].getAuthor() == author){
-       return aut.push(this.books[i])
-     }
+     aut.push(this.books[i])}
     
         
-    }
-    }
+    }return aut
+}}
