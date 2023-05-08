@@ -22,16 +22,12 @@ console.log(hasEven(nums));
 var names = ["Maria", "Mirta", "Miguel"];
 var startWithM = function (mynames) {
     var i = 0;
-    var encontrado = false;
-    while (i < mynames.length && !encontrado) {
-        encontrado = ((mynames[mynames[0][0].slice(0)] == "M"));
+    while (i < mynames.length) {
+        if (mynames[i].startsWith("M") == false) {
+            return false;
+        }
         i++;
     }
-    if (encontrado) {
-        return encontrado;
-    }
-    else {
-        return false;
-    }
+    return true;
 };
 console.log(startWithM(names));
