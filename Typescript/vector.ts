@@ -17,54 +17,42 @@ constructor (n:number, k:number){
 
 //////////////// METODS ////////////////
 
-public print():number[]{
-    return this.elements
+public print(){
+    console.log(this.elements)
 }
 
-public add(v1:number[]):number[]{
-    let suma :number[]= [];
+public add(v1:Vector):Vector{
+    let suma :Vector = new Vector (this.elements.length,0);
    
-        for (let i = 0; i < v1.length; i++){
-            suma[i]= v1[i] + this.elements[i];
+    for (let i = 0; i < this.elements.length; i++){
+            suma.elements[i]= v1.elements[i] + this.elements[i];
         } 
     return suma;
 };
 
-public subs(v1:number[]):number[]{
-    let resta:number[] = [];
-    for (let i=0; i<v1.length; i++){
-        resta[i]= v1[i]- this.elements[i];
+public subs(v1:Vector):Vector{
+    let resta:Vector = new Vector (this.elements.length,0);
+    for (let i = 0; i < this.elements.length; i++){
+        resta.elements[i]= v1.elements[i]- this.elements[i];
     }
     return resta;
 };
 
-public mult(v1:number[]):number[]{
-    let mult:number[] = [];
-    for (let i=0; i<v1.length; i++){
-        mult[i]= v1[i]* this.elements[i];
+public mult(v1:Vector):Vector{
+    let mult:Vector = new Vector (this.elements.length,0);
+    for (let i = 0; i<this.elements.length; i++){
+        mult.elements[i]= v1.elements[i]* this.elements[i];
     }
     return mult;
 };
 
-public multNumber(n:number):number[]{
-    let multNumber:number[]= [];
-    for (let i=0; i<this.elements.length; i++){
-        multNumber.push(n*this.elements[i]);
+public multNumber(n:number):Vector{
+    let multNumber:Vector = new Vector (this.elements.length,0);
+    for (let i = 0; i < this.elements.length; i++){
+        multNumber.elements[i]= (n*this.elements[i]);
     }
     return multNumber;
 };
 
 }
 
-
-
-
-
-
-
-
-// - print(). Imprime por consola el vector.
-// - add(v1:Vector):Vector. Realiza la suma de elements con v1.
-// - subs(v1:Vector):Vector. Realiza la resta de elements con v1.
-// - mult(v1:Vector):Vector. Realiza el producto de elements y v1.
-// - multNumber(n:number):Vector. Realiza el producto entre elements y el número n
