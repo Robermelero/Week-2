@@ -52,7 +52,7 @@ var Mobile = /** @class */ (function () {
     };
     ;
     Mobile.prototype.toPrint = function (_a) {
-        return "The characteristics of the mobile name are:".concat("\n").concat("\n", "\u2022 Name:          ").concat(this.name).concat("\n", "\u2022 Trademark:     ").concat(this.trademark).concat("\n", "\u2022 model:         ").concat(this.model).concat("\n", "\u2022 Color:         ").concat(this.color).concat("\n", "\u2022 Price:         ").concat(this.price);
+        return "The characteristics of the mobile ".concat(this.name, " are:").concat("\n").concat("\n", "\u2022 Name:          ").concat(this.name).concat("\n", "\u2022 Trademark:     ").concat(this.trademark).concat("\n", "\u2022 model:         ").concat(this.model).concat("\n", "\u2022 Color:         ").concat(this.color).concat("\n", "\u2022 Price:         ").concat(this.price);
     };
     return Mobile;
 }());

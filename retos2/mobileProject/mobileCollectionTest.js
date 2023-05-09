@@ -9,5 +9,5 @@ var mobile4 = new mobile_1.Mobile("Nokia", "Nokia", "3300", "white", 299);
 var mobile5 = new mobile_1.Mobile("Iphone", "Apple", "IphoneX", "white", 1100);
 var myMobile = [mobile1, mobile2, mobile3, mobile4];
 var myCollection = new mobileCollection_1.MobileCollection(myMobile);
-console.log(mobile1.getPrice());
-// console.log(myMobile)
+// console.log(mobile1.getPrice())
+myCollection.printCollection();

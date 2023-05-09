@@ -30,7 +30,13 @@ var MobileCollection = /** @class */ (function () {
         }
         return sumTotal;
     };
+    MobileCollection.prototype.printCollection = function () {
+        console.log("".concat("\n", "This is all my mobiles:").concat("\n"));
+        for (var i = 0; i < this.mobile.length; i++) {
+            console.log(this.mobile[i].toPrint(this.mobile));
+        }
+        console.log("Price overall  : ".concat(this.totalPriceCalculation()));
+    };
     return MobileCollection;
 }());
 exports.MobileCollection = MobileCollection;
-;

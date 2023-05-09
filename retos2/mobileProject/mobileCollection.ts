@@ -41,5 +41,11 @@ public setMobile(newMobile:Mobile[]){
     }
   return sumTotal;
   }
-};
 
+  public printCollection(){
+    console.log(`${"\n"}This is all my mobiles:${"\n"}`);
+    for(let i = 0; i < this.mobile.length; i++){
+       console.log( this.mobile[i].toPrint(this.mobile))} 
+       console.log(`Price overall  : ${this.totalPriceCalculation()}`)
+    
+    }}
