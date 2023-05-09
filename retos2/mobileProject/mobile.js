@@ -11,40 +11,40 @@ var Mobile = /** @class */ (function () {
         this.price = price;
     }
     /////////////////////   METODS  ///////////////////////////
-    Mobile.prototype.setName = function (name) {
-        return this.name = name;
+    Mobile.prototype.setName = function (newName) {
+        this.name = newName;
     };
     ;
     Mobile.prototype.getName = function () {
         return this.name;
     };
     ;
-    Mobile.prototype.setTrademark = function (trademark) {
-        return this.trademark = trademark;
+    Mobile.prototype.setTrademark = function (setTrademark) {
+        this.trademark = setTrademark;
     };
     ;
     Mobile.prototype.getTrademarkt = function () {
         return this.trademark;
     };
     ;
-    Mobile.prototype.setModel = function (model) {
-        return this.model = model;
+    Mobile.prototype.setModel = function (newModel) {
+        this.model = newModel;
     };
     ;
     Mobile.prototype.getModel = function () {
         return this.model;
     };
     ;
-    Mobile.prototype.setColor = function (color) {
-        return this.color = color;
+    Mobile.prototype.setColor = function (newColor) {
+        this.color = newColor;
     };
     ;
     Mobile.prototype.getColor = function () {
         return this.color;
     };
     ;
-    Mobile.prototype.setPrice = function (price) {
-        return this.price = price;
+    Mobile.prototype.setPrice = function (newPrice) {
+        this.price = newPrice;
     };
     ;
     Mobile.prototype.getPrice = function () {
