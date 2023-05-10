@@ -58,17 +58,17 @@ export class Point{
         return quadrant;
     }
     
-    public calculateNearest(points : Point[]) : Point{
-        let act: number = 0
-    for ( let i = 0; i<points.length; i++){
-    this.calculateDistance(points[i])
-    if(this.calculateDistance(points[i])<act){
-        act = i
-        let final = points[act];
+    // public calculateNearest(points : Point[]) :Point{
+    //     let act: number = 0
+    // for ( let i = 0; i<points.length; i++){
+    // this.calculateDistance(points[i])
+    // if(this.calculateDistance(points[i])<act){
+    //     act = i
+    //     let final:Point = points[act];
     
-        
-        return final}
-    }
+    
+    //     return final 
+    // }
     
     }}
     

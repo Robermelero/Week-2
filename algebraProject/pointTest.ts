@@ -1,4 +1,4 @@
-import { Console } from "console";
+
 import { Point } from "./point";
 
 let myPoint:Point = new Point(9,7);
