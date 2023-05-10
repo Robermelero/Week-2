@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var triangle_1 = require("./triangle");
+var point_1 = require("./point");
+7;
+var myPoint2 = new point_1.Point(7, 7);
+var myPoint3 = new point_1.Point(-7, 13);
+var myPoint4 = new point_1.Point(17, -9);
+var triangle = new triangle_1.Triangle(myPoint2, myPoint3, myPoint4);
+console.log(triangle.calculateLengthSide());

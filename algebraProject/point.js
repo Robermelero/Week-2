@@ -53,6 +53,17 @@ var Point = /** @class */ (function () {
         ;
         return quadrant;
     };
+    Point.prototype.calculateNearest = function (points) {
+        var act = 0;
+        for (var i = 0; i < points.length; i++) {
+            this.calculateDistance(points[i]);
+            if (this.calculateDistance(points[i]) < act) {
+                act = i;
+                var final = points[act];
+                return final;
+            }
+        }
+    };
     return Point;
 }());
 exports.Point = Point;
